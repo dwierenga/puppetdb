@@ -298,7 +298,7 @@
         ADD CONSTRAINT fact_values_value_hash_key UNIQUE (value_hash)"
 
     "ALTER TABLE ONLY facts
-        ADD CONSTRAINT facts_factset_id_fact_path_id_fact_key UNIQUE (factset_id, fact_path_id)"
+        ADD CONSTRAINT facts_factset_id_fact_path_id_fact_pkey PRIMARY KEY (factset_id, fact_path_id)"
 
     "ALTER TABLE ONLY factsets
         ADD CONSTRAINT factsets_certname_idx UNIQUE (certname)"
