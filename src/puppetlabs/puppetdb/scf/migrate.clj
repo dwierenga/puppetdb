@@ -277,7 +277,7 @@
         ADD CONSTRAINT constraint_resource_events_unique UNIQUE (report, resource_type, resource_title, property)"
 
     "ALTER TABLE ONLY edges
-        ADD CONSTRAINT edges_certname_source_target_type_unique_key UNIQUE (certname, source, target, type)"
+        ADD CONSTRAINT edges_certname_source_target_type_pkey PRIMARY KEY (certname, source, target, type)"
 
     "ALTER TABLE ONLY environments
         ADD CONSTRAINT environments_name_key UNIQUE (name)"
